@@ -1,18 +1,11 @@
-﻿// // Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// // for details on configuring this project to bundle and minify static web assets.
-
-// // Write your JavaScript code.
-var stripe = Stripe('pk_test_XfHGe7CQlIfC0oNDVBe7RGgH00XUi5JkVy');
+﻿var stripe = Stripe('pk_test_XfHGe7CQlIfC0oNDVBe7RGgH00XUi5JkVy');
 
 var elements = stripe.elements();
-// var cardElement = elements.create('card');
 
 var cardnumberElement = elements.create('cardNumber');
 var cvcElement = elements.create('cardCvc');
 var expiryElement = elements.create('cardExpiry');
 var zipElement = elements.create('postalCode');
-
-// cardElement.mount('#card-element');
 
 cardnumberElement.mount('#cardNumber-element');
 cvcElement.mount('#cardCvc-element');
@@ -61,7 +54,6 @@ cardButton.addEventListener('click', function(ev) {
 function handleServerResponse(response) {
     if (response.error) {
         alert('error');
-      // Show error from server on payment form
     } else if (response.requires_action) {
       // Use Stripe.js to handle required card action
       alert('requires action');
@@ -70,7 +62,6 @@ function handleServerResponse(response) {
       ).then(function(result) {
         if (result.error) {
             alert('error');
-          // Show error in payment form
         } else {
           // The card action has been handled
           // The PaymentIntent can be confirmed again on the server
