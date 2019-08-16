@@ -8,3 +8,9 @@
 - It is secure - you can populate empty tags with Stripe elements
 - The API is really well put together - you can see all of you requests in the dashboard
 - The amount is associated with a customer
+
+## What's involved
+- Controller to handle the requests
+- Index page containing the form
+- Your client side Javascript to handle the validation
+- Stripe JavaScript to do the other things
