@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<form method="post" id="payment-form">
+<label for="card-element">
+      Credit or debit card
+</label>
+<br/>
+
+<input id="cardholder-name" type="text" class="StripeElement" placeholder="Name">
+
+<div id="card-element"></div>
+
+<div id="cardNumber-element"></div>
+<div id="cardCvc-element"></div>
+<div id="cardExpiry-element"></div>
+<div id="postalCode-element"></div>
+
+<h1></h1>
+<div id="card-errors" role="alert"></div>
+<button type="button" id="card-button" data-secret="@ViewData["ClientSecret"]">Submit Payment</button>
+
+</form>
+
+<footer>
+<script src="https://js.stripe.com/v3/"></script>
+<!-- <script src="~/js/site.js"></script> -->
+</footer>
