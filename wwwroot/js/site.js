@@ -75,7 +75,6 @@ function handleServerResponse(response) {
         }
       });
     } else {
-      // Show success message
       alert('success');
     }
 }

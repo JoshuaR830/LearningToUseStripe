@@ -10,7 +10,6 @@ using Newtonsoft.Json;
 
 namespace LearningStripeCore.Controllers
 {
-
     public class ConfirmPaymentRequest
     {
         [JsonProperty("payment_method_id")]
