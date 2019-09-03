@@ -14,3 +14,6 @@
 - Index page containing the form
 - Your client side Javascript to handle the validation
 - Stripe JavaScript to do the other things
+
+## Check out the slides
+- https://docs.google.com/presentation/d/1b3UEHM6dx9CCcf-K7PrA4KX6m-FTTrfgjZTZp6UWYzE/edit?usp=sharing
