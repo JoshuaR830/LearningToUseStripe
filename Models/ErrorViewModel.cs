@@ -1,6 +1,6 @@
 using System;
 
-namespace LearningStripeCore.Models
+namespace newStripe.Models
 {
     public class ErrorViewModel
     {

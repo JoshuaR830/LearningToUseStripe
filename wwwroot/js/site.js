@@ -19,12 +19,17 @@ var clientSecret = cardButton.dataset.secret;
 cardButton.addEventListener('click', function(ev) {
     ev.preventDefault;
     cardButton.setAttribute('disabled', 'disabled');
-
+    console.log("Hello");
     if(cardholderName.value == "")
     {
-        cardholderName.classList.add('error');
+        alert("error");
+        cardholderName.classList.add('StripeElement--invalid');
+        console.log("Added error");
         cardButton.removeAttribute('disabled', 'disabled');
         return;
+    }
+    else{
+        cardholderName.classList.remove('StripeElement--invalid');
     }
 
     stripe.createPaymentMethod( 'card', cardnumberElement, { 
